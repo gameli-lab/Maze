@@ -1,7 +1,7 @@
 CC = gcc
-CFLAGS = -Iinc -I/usr/local/include/SDL2
+CFLAGS = -Iinc -I/usr/local/include/SDL2 -Wall -Werror -Wextra -pedantic
 LDFLAGS = -lSDL2 -lm
-SRC = src/ben.c src/ray.c
+SRC = src/ben.c src/ray.c src/func.c
 OBJ = $(SRC:.c=.o)
 EXEC = maze
 

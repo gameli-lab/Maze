@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <SDL2/SDL.h>
-/*#include <maths.h>*/
 
 #define SCREEN_WIDTH 960
 #define SCREEN_HEIGHT 720
@@ -32,5 +31,7 @@ int init_SDL(SDL_Window **window, SDL_Renderer **renderer);
 void input(pdp *set);
 void render(SDL_Renderer *renderer, pdp *set);
 void close_SDL(SDL_Renderer *renderer, SDL_Window *window);
+void player(SDL_Renderer *renderer, pdp *set);
+void drawing(SDL_Renderer *renderer, Ray *ray, double x);
 
 #endif /* BEN_H */
