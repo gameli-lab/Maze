@@ -25,7 +25,7 @@ void rotateCam(pdp *set, double angle)
  * Return: returns 1 on success else 0
  */
 
-int init_SDL(SDL_Window **window, SDL_Renderer **renderer)
+int init_SDL(SDL_Window **window, SDL_Renderer **renderer, int SCREEN_WIDTH, int SCREEN_HEIGHT)
 {
 	if (SDL_Init(SDL_INIT_VIDEO) < 0)
 	{
@@ -35,7 +35,7 @@ int init_SDL(SDL_Window **window, SDL_Renderer **renderer)
 
 	*window = SDL_CreateWindow("Gameli's Maze", SDL_WINDOWPOS_UNDEFINED,
 			SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT,
-			SDL_WINDOW_SHOWN);
+			SDL_WINDOW_RESIZABLE);
 	if (*window == NULL)
 	{
 	printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
@@ -59,7 +59,7 @@ int init_SDL(SDL_Window **window, SDL_Renderer **renderer)
  * @set: structurefor player
  */
 
-void input(pdp *set)
+void input(pdp *set, int *SCREEN_WIDTH, int *SCREEN_HEIGHT)
 {
 	SDL_Event e;
 
@@ -86,11 +86,17 @@ void input(pdp *set)
 					set->posY -= set->dirY * 0.5;
 			}
 			else if ((e.key.keysym.sym == SDLK_LEFT) || (e.key.keysym.sym == SDLK_a))
-				rotateCam(set, 0.1);
+				rotateCam(set, -0.1);
 
 			else if ((e.key.keysym.sym == SDLK_RIGHT) || (e.key.keysym.sym == SDLK_d))
-				rotateCam(set, -0.1);
+				rotateCam(set, 0.1);
 		}
+		else if (e.type == SDL_WINDOWEVENT)
+			if (e.window.event == SDL_WINDOWEVENT_SIZE_CHANGED)
+			{
+				*SCREEN_WIDTH = e.window.data1;
+				*SCREEN_HEIGHT = e.window.data2;
+			}
 	}
 }
 
@@ -106,3 +112,19 @@ void close_SDL(SDL_Renderer *renderer, SDL_Window *window)
 	SDL_Quit();
 }
 
+
+SDL_Texture *load_texture(SDL_Renderer *renderer, const char *file)
+{
+	SDL_Surface *surface = IMG_Load(file);
+	if(!surface)
+	{
+		printf("Error loading image : %s\n", IMG_GetError());
+		return NULL;
+	}
+	SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);
+	SDL_FreeSurface(surface);
+
+	if (!surface)
+		printf("Error creating texture: %s\n", SDL_GetError());
+	return (texture);
+}

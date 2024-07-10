@@ -4,27 +4,27 @@ int map[24][24] = {
 	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
 	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 3, 0, 3, 0, 3, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 2, 2, 0, 2, 2, 0, 0, 0, 0, 3, 0, 3, 0, 3, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 4, 0, 4, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 4, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 4, 0, 4, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 4, 0, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+	{1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1},
+	{1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1},
+	{1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1},
+	{1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1},
+	{1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1},
+	{1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1},
+	{1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1},
+	{1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 2, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1},
+	{1, 0, 2, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1},
+	{1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1},
+	{1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1},
+	{1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1},
+	{1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0}
 };
 
 
@@ -72,7 +72,7 @@ void performDDA(Ray *ray, pdp *set, double rayDirX, double rayDirY)
  * @set: structure for player
  */
 
-void drawScene(SDL_Renderer *renderer, pdp *set)
+void drawScene(SDL_Renderer *renderer, SDL_Texture *wall, SDL_Texture *ground, SDL_Texture *ceiling, pdp *set, int SCREEN_WIDTH, int SCREEN_HEIGHT)
 {
 	double x, cameraX, rayDirX, rayDirY;
 
@@ -112,7 +112,7 @@ void drawScene(SDL_Renderer *renderer, pdp *set)
 			ray.sideDistY = (ray.mapY + 1.0 - set->posY) * ray.deltaDistY;
 		}
 		performDDA(&ray, set, rayDirX, rayDirY);
-		drawing(renderer, &ray, x);
+		drawing(renderer, wall, ground, ceiling, &ray, x, SCREEN_HEIGHT);
 	}
 }
 
@@ -125,9 +125,10 @@ void drawScene(SDL_Renderer *renderer, pdp *set)
  */
 
 
-void drawing(SDL_Renderer *renderer, Ray *ray, double x)
+void drawing(SDL_Renderer *renderer, SDL_Texture *wall, SDL_Texture *ground, SDL_Texture *ceiling, Ray *ray, double x, int SCREEN_HEIGHT)
 {
-	int lineHeight, drawStart, drawEnd, color;
+	int lineHeight, drawStart, drawEnd, y;
+	SDL_Rect wallRect, groundRect, ceilingRect/*, rect*/;
 	/* Calculate height of line to draw on screen */
 	lineHeight = (int)(SCREEN_HEIGHT / ray->perpWallDist);
 
@@ -139,59 +140,21 @@ void drawing(SDL_Renderer *renderer, Ray *ray, double x)
 	if (drawEnd >= SCREEN_HEIGHT)
 		drawEnd = SCREEN_HEIGHT - 1;
 
-	/* Set wall color */
-	color = 128;
-
 	/* Draw the ceiling */
-	SDL_SetRenderDrawColor(renderer, 135, 206, 235, 255); /* Sky color  ceiling */
-	SDL_RenderDrawLine(renderer, x, 0, x, drawStart);
+	for (y = 0; y < drawStart; y += TILE_SIZE)
+	{
+		ceilingRect = (SDL_Rect){x, y, 1, TILE_SIZE};
+		SDL_RenderCopy(renderer, ceiling, NULL, &ceilingRect);
+	}
 
 	/* Draw the wall */
-	SDL_SetRenderDrawColor(renderer, color, color, color, 255);
-	SDL_RenderDrawLine(renderer, x, drawStart, x, drawEnd);
+	wallRect = (SDL_Rect){x, drawStart, 1, drawEnd - drawStart};
+	SDL_RenderCopy(renderer, wall, NULL, &wallRect);
 
 	/* Draw the ground */
-	SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
-	SDL_RenderDrawLine(renderer, x, drawEnd, x, SCREEN_HEIGHT);
+	for (y = drawEnd; y < SCREEN_HEIGHT; y += TILE_SIZE)
+	{
+		groundRect = (SDL_Rect){x, y, 1, TILE_SIZE};
+		SDL_RenderCopy(renderer, ground, NULL, &groundRect);
+	}
 }
-
-/**
- * player - Thats our player
- * @renderer: renderer from SDL
- * @set: plane structure
- */
-
-void player(SDL_Renderer *renderer, pdp *set)
-{
-	/* Draw the player*/
-	SDL_Rect playerRect;
-
-	playerRect.x = (int)(set->posX * 10);
-	playerRect.y = (int)(set->posY * 10);
-	playerRect.w = 5;
-	playerRect.h = 5;
-
-	SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255); /*color for player*/
-	SDL_RenderFillRect(renderer, &playerRect);
-}
-
-/**
- * render - renders the graphics
- * @renderer: calls render from SDL
- * @set: structure for player
- */
-
-void render(SDL_Renderer *renderer, pdp *set)
-{
-	player(renderer, set);
-	/* Clear screen */
-	SDL_SetRenderDrawColor(renderer, 135, 206, 235, 255);
-	SDL_RenderClear(renderer);
-
-	/* Perform raycasting and draw to screen */
-	drawScene(renderer, set);
-
-	/* Update screen */
-	SDL_RenderPresent(renderer);
-}
-
