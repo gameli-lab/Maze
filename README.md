@@ -5,7 +5,7 @@ Introduction
 Gameli's Maze Game is a 3D maze game implemented using C and SDL2. It features a first-person perspective where players navigate through a maze, encountering walls, ceilings, and floors with textured surfaces.
 
 Deployed Site: https://www.github.com/gameli-lab/maze
-Final Project Blog Article: 
+Final Project Blog Article: https://www.linkedin.com/pulse/gamelis-maze-benjamin-torfu-nqkme 
 Author(s) LinkedIn: https://gh.linkedin.com/in/benjamin-torfu-56a5a21b8
 
 Installation
