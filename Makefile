@@ -3,7 +3,7 @@ CFLAGS = -Iinc -I/usr/local/include/SDL2 -Wall -Werror -Wextra -pedantic
 LDFLAGS = -lSDL2 -lSDL2_image -lm
 SRC = src/ben.c src/ray.c src/func.c src/map.c
 OBJ = $(SRC:.c=.o)
-EXEC = maze
+EXEC = gameli_maze
 
 all: $(EXEC)
 
